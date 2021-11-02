@@ -1,126 +1,104 @@
-/* Copyright (C) 2021 farhan-dqz
-coded for juliemwol
-*/
+const Asena = require('../events');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const axios = require('axios');
 
-const Julie = require('../events');
-const config = require('../config');
-const Heroku = require('heroku-client');
-const heroku = new Heroku({
-    token: config.HEROKU.API_KEY
-});
-let baseURI = '/apps/' + config.HEROKU.APP_NAME;
+const Language = require('../language');
+const Lang = Language.getString('wallpaper');
 
-   var l_dsc = ''
-    var BGM_on = ''
-    var BGM_off = ''
-    var STICKER_on = ''
-    var STICKER_off = ''
+Asena.addCommand({pattern: 'setvar', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
-    if (config.LANG == 'EN') {
-        l_dsc = 'turn on and turn off bgm. -bot owner command'
-        Y_dsc = 'turn on and turn off bgm. -bot owner command'
-        BGM_on = 'bgm option turned on!'
-        BGM_off = 'bgm option turned off'
-        STICKER_on = 'STICKER option turned on!'
-        STICKER_off = 'STICKER option turned off'
-        P_dsc = 'turn on & off anti-badword To remove members when they use bad words'        
-    }
-    if (config.LANG == 'ML') {
-        l_dsc = 'bgm ഓണാക്കുക അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക. -ബോട്ട് ഉടമ കമാൻഡ്'
-        Y_dsc = 'bgm ഓണാക്കുക അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക. -ബോട്ട് ഉടമ കമാൻഡ്'        
-        BGM_on = 'bgm ഓപ്ഷൻ ഓണാക്കി'
-        BGM_off = 'bgm ഓപ്ഷൻ ഓഫാക്കി'
-        STICKER_on = 'STICKER option turned on!'
-        STICKER_off = 'STICKER option turned off'
-        
-    }
-    Julie.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
-        if (match[1] == 'off') {
-                await heroku.patch(baseURI + '/config-vars', { 
-                    body: { 
-                        ['BGM_FILTER']: 'false'
-                    } 
-                });
-                await message.sendMessage(BGM_off)
-        } else if (match[1] == 'on') {
-                await heroku.patch(baseURI + '/config-vars', { 
-                    body: { 
-                        ['BGM_FILTER']: 'true'
-                    } 
-                });
-                await message.sendMessage(BGM_on)
-        }
-    }));
+    var r_text = new Array ();
+    
+    
+    r_text[0] = "https://i.imgur.com/jYRyiVL.jpeg";
+    
+    
+    var i = Math.floor(1*Math.random())
 
-    Julie.addCommand({pattern: 'autosticker ?(.*)', fromMe: true, desc: Y_dsc, usage: '.sticker on / off' }, (async (message, match) => {
-        if (match[1] == 'off') {
-                await heroku.patch(baseURI + '/config-vars', { 
-                    body: { 
-                        ['AUTO_STICKER']: 'false'
-                    } 
-                });
-                await message.sendMessage(STICKER_off)
-        } else if (match[1] == 'on') {
-                await heroku.patch(baseURI + '/config-vars', { 
-                    body: { 
-                        ['AUTO_STICKER']: 'true'
-                    } 
-                });
-                await message.sendMessage(STICKER_on)
-        }
-    }));
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    Julie.addCommand({ pattern: 'sudo ?(.*)', fromMe: true, desc: 'changes sudo numbers', usage: '.sudo *your number*' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('NEED A NUMBER')
-        await heroku.patch(baseURI + '/config-vars', {
-            body: {
-                ['SUDO']: match[1]
-            }
-        });
-        await message.sendMessage("NEW SUDO UPDATED")
-    }));
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⛦━━💘SETVAR💘━━⛦
+𝐇𝐞𝐥𝐥𝐨👋 𝐈 𝐚𝐦 𝐚 AchuMwol 𝐛𝐨𝐭.
+  
+*ẉa.me/➳Setvar*
+■□■□■□■□■□■□■□■□■□■□
+All setvars are
 
-    Julie.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *Made by JulieMwol*' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('NEED cA CAPTION')
-        await heroku.patch(baseURI + '/config-vars', {
-            body: {
-                ['ALL_CAPTION']: match[1]
-            }
-        });
-        await message.sendMessage("NEW CAPTION UPDATED")
-    }));
+ To change add message
+ .setvar ADD_MESSAGE:your message
 
-    Julie.addCommand({ pattern: 'handlers ?(.*)', fromMe: true, desc: 'changes handlers', usage: '.handler ^[.!] ' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('NEED A CAPTION')
-        await heroku.patch(baseURI + '/config-vars', {
-            body: {
-                ['ALL_CAPTION']: match[1]
-            }
-        });
-        await message.sendMessage("NEW HANDLER UPDATED")
-    }));
+ To change afk message
+ .setvar AFK_MESSAGE:your message
 
+ To change alive message
+ .setvar ALIVE_MESSAGE:your message
 
-    Julie.addCommand({ pattern: 'botname ?(.*)', fromMe: true, desc: 'change your bot name', usage: '.botname *name* ' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME')
-        await heroku.patch(baseURI + '/config-vars', {
-            body: {
-                ['BOT_NAME']: match[1]
-            }
-        });
-        await message.sendMessage("NEW BOT NAME UPDATED")
-    }));
+ To change captions generated by bot
+ .setvar ALL_CAPTION:your message
 
-Julie.addCommand({ pattern: 'theri  ?(.*)', fromMe: true, desc: 'change your theri commands', usage: '.theri command,command' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME')
-        await heroku.patch(baseURI + '/config-vars', {
-            body: {
-                ['THERI_LIST']: match[1]
-            }
-        });
-        await message.sendMessage("THERI LIST UPDATED")
-    }));
+ To change ban message
+ .setvar BAN_MESSAGE:your message
 
+ To change block message
+ .setvar BLOCK_MESSAGE:your message
 
+ To block a chat from using bot
+ .setvar BLOCK_CHAT:chat jid,0,chat jid,0..etc
 
+ To change bot name on .list reply
+ .setvar BOT_NAME:your BOT name
 
+ To change .leave message
+ .setvar KICKME_MESSAGE:your message
+
+ To change owner name
+ .setvar OWNER_NAME:your name
+
+ To change promote message
+ .setvar PROMOTE_MESSAGE:your message
+
+ To change demote message
+ .setvar DEMOTE_MESSAGE:your message
+
+ To change handler
+ .setvar HANDLERS:^[.,!]your handler insidde the box
+
+ To change removebg api key 
+ .setvar REMOVE_BG_API_KEY:api key
+
+ To change SUDO
+ .setvar SUDO:number,0,number,0
+
+ To change tagall heading 
+ .setvar TAG_HEADER:your message
+
+ To change unblock message
+ .setvar UNBLOCK_MESSAGE:your message
+
+ To change unmute message
+ .setvar UNMUTE_MESSAGE:your message
+
+ To change work type message
+ .setvar WORK_TYPE:public or private or admin
+
+ To change bad word remove list
+ .setvar THERI_LIST:badword,badword
+
+ To change AMALSER bot name
+ .setvar BOT_NAME:your bot name
+
+ To get a song when your number is mentioned
+ .setvar TAG_REPPLY:your jid 
+
+     *THANKS FOR USING ACHUMWOL BOT ❣️*
+
+*Editing And Devaloper : Akshay- AchuMwol*
+
+*Erorr Fixing : Farhan -Julie Mwol 💌*
+
+*Supporting : Afnan -Pinky 💌*
+
+      ═════💢💢═════
+`}) 
+
+}));
