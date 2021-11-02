@@ -28,7 +28,7 @@ class StringSession {
     }
 
     createStringSession(dict) {
-        return 'Achu:::' + Buffer.from(JSON.stringify(dict)).toString('base64');
+        return 'ACHU:::' + Buffer.from(JSON.stringify(dict)).toString('base64');
     }
 }
 
