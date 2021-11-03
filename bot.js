@@ -70,9 +70,8 @@ async function whatsAsena () {
     
     
     const conn = new WAConnection();
-    const res = await axios('https://untitled-1ouyr1rszhaw.runkit.sh/web')
-    conn.version = res.data.version
-    const Session = new StringSession();
+    conn.version = [2,2142,12];
+const Session = new StringSession();
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
     var nodb;
