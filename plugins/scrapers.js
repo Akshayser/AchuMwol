@@ -893,7 +893,7 @@ else if (config.WORKTYPE == 'public') {
             return;
     
         let 
-            LANG = 'ml',
+            LANG = 'az',
             ttsMessage = match[1],
             SPEED = 1.0
 
