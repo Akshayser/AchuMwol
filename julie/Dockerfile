@@ -1,8 +1,8 @@
-FROM OOMFU
+FROM quay.io/lyfe00011/test:beta
 
-RUN git clone  ULUPPILLAATHE NIKUNNOR
-WORKDIR 2 VATTAM KOODI OOMPU 
+RUN git clone https://github.com/Akshayser/AchuMwol /root/WhatsAsenaDuplicated
+WORKDIR /root/WhatsAsenaDuplicated/
 RUN yarn install --no-audit
-RUN git clone ULUPPILLAATHE NIKUNNOR 2
-RUN cp -RUN THROUGH KANDAM
-CMD ["PZM", "botINTE ENDI .js"]
+RUN git clone https://github.com/farhan-dqz/media
+RUN cp -R /root/Utils/* /root/WhatsAsenaDuplicated 
+CMD ["node", "bot.js"]
