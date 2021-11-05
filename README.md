@@ -51,10 +51,10 @@ No personal support will be provided / We won't spoon feed you.
 If you need help
 you can contact -
 ```
-<a href="https://wa.me/+917907531097?text=*Hey+iam+from+your+github+link+need+help💞*"><img title="click to contact owner" src="https://img.shields.io/badge/click_to_contact_owner-afnanplk/pinkymwol?color=black&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://wa.me/917907531097"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+  <a href="https://instagram.com/unnisettan5"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  <a href="https://github.com/Akshayser"><img src="https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github" /> 
   
-   <a href="https://chat.whatsapp.com/EtCx3zSWEnkCxdEIsLWnKD"><img alt="WhatsApp" src="https://img.shields.io/badge/-Whatsapp%20Group-lightgrey?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
-
 
 ## Developers
   <div align="center">
