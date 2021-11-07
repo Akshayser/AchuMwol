@@ -27,7 +27,7 @@ Project created by <a href="https://github.com/Akshayser">Akshayser</a> to make 
 5. Fill the all options from the Heroku
 6. To get the ```Git key``` to deploy *AchuMwol* 
 7. then deploy the bot and enjoy😗🎉
-8. if you have any doubts or problems ,come to our [support group](https://chat.whatsapp.com/EtCx3zSWEnkCxdEIsLWnKD
+8. if you have any doubts or problems ,come to our [support group](https://chat.whatsapp.com/EtCx3zSWEnkCxdEIsLWnKD) 
 
   <p align="center">
   <a href="https://github.com/Akshayser/AchuMwol">
