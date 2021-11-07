@@ -18,11 +18,16 @@ Project created by <a href="https://github.com/Akshayser">Akshayser</a> to make 
 </p>
 <div align="center">
 
-  ### Simple Method
-  
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Akshayser/AchuMwol) 
-  
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@AKSHAYSIR/AchuMwol)
+  ## 📌STEPS TO DEPLOY
+
+1. Click [here](https://achumwols-website.yolasite.com/) ,you will be redirected to my site
+2. you can see 2 buttons in the main page 
+3. click ```GET QR```  button , then scan the Qr
+4. Come back to the Site and click ```DEPLOY TO HEROKU``` BUTTON
+5. Fill the all options from the Heroku
+6. To get the ```Git key``` to deploy *AchuMwol* 
+7. then deploy the bot and enjoy😗🎉
+8. if you have any doubts or problems ,come to our [support group](https://chat.whatsapp.com/EtCx3zSWEnkCxdEIsLWnKD
 
   <p align="center">
   <a href="https://github.com/Akshayser/AchuMwol">
