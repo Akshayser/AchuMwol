@@ -89,7 +89,7 @@ Julie.addCommand({pattern: 'add(?: |$)(.*)', fromMe: true, dontAddCommandList: t
     }
 }));
 
-Julie.addCommand({pattern: 'promote ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
+Julie.addCommand({pattern: 'admin ?(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
