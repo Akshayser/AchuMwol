@@ -81,10 +81,10 @@
             "MUST_TEXT": "```Please reply to any message```"
         },
         "heroku": {
-            "RESTART_DESC": "Restart Julie",
-            "RESTART_MSG": "```Restarting...```",
-            "SHUTDOWN_DESC": "Shutdown Julie",
-            "SHUTDOWN_MSG": "```Shutting down ⛔```",
+            "RESTART_DESC": "Restart Achu",
+            "RESTART_MSG": "```Restarting ᴀᴄʜᴜᴍᴡᴏʟ...```",
+            "SHUTDOWN_DESC": "Shutdown ᴀᴄʜᴜᴍᴡᴏʟ",
+            "SHUTDOWN_MSG": "```Shutting down ᴀᴄʜᴜᴍᴡᴏʟ ⛔```",
             "DYNO_DESC": "Check heroku dyno usage",
             "DYNO_TOTAL": "```Total Quota```",
             "DYNO_USED": "```Quota used```",
@@ -221,7 +221,7 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```Converting..🧭```"
+            "DOWNLOADING": "```ᴠᴀʀᴜᴍ ᴡᴀɪᴛ ᴄʜᴇʏʏ..🧭```"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
@@ -243,14 +243,14 @@
         },
         "updater": {
             "UPDATER_DESC": "Checks the update.",
-            "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\n please join here for support https://chat.whatsapp.com/EWLP9VPgYmgGff6NORWSKk \n\nChanges:\n```",
+            "UPDATE": "*Your ᴀᴄʜᴜ bot is completely up-to-date!*",
+            "NEW_UPDATE": "*New update available for ᴀᴄʜᴜ Bot!*\n\n please join here for support https://chat.whatsapp.com/EtCx3zSWEnkCxdEIsLWnKD \n\nChanges:\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "Updating..🧞‍♂️",
             "INVALID_HEROKU": "*❌ Your Heroku app name or api key wrong!*",
             "UPDATED": "*✅  Updated!*",
-            "UPDATED_LOCAL": "*✅ Updated!*",
-            "AFTER_UPDATE": "*JulieMwol Restarting !*",
+            "UPDATED_LOCAL": "*✅ Updated AchuMwol successfully!*",
+            "AFTER_UPDATE": "*AchuMwol is Restarting !*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
@@ -309,7 +309,7 @@
         "conventer": {
             "MP4TOAUDİO_DESC": "Converts video to sound.",
             "MP4TOAUDİO_NEEDREPLY": "*You Must Reply to a Video!*",
-            "MP4TOAUDİO": "```Converting Video to Audio..```",
+            "MP4TOAUDİO": "```video sound audio lek mattunu..```",
             "ANİM_STİCK": "Converts animated stickers to video.",
             "ANİMATE": "```Converting Animated Sticker To Video..```",
             "STİCKER_DESC": "Converts the sticker to a photo.",
