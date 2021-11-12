@@ -1,8 +1,8 @@
-FROM quay.io/lyfe00011/test:beta
+FROM ENTHADA MYRE NOOKUNE
 
-RUN git clone https://github.com/Akshayser/AchuMwol /root/WhatsAsenaDuplicated
-WORKDIR /root/WhatsAsenaDuplicated/
-RUN yarn install --no-audit
-RUN git clone https://github.com/Akshayser/media
-RUN cp -R /root/Utils/* /root/WhatsAsenaDuplicated 
-CMD ["node", "bot.js"]
+RUN git clone NOOKI IRUNNO UMBATHE ULLU /root/WhatsAsenaDuplicated
+WORKDIR ULLUPILLATHAVAR
+RUN yarn NINAKK CHUNNI ILLA MYRE
+RUN git clone OODIKKO
+RUN cp -R MELLAL NINNR IVIDE KAANARUTH
+CMD OODIKO KANDAM VAZHI
