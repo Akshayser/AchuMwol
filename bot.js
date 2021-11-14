@@ -103,6 +103,26 @@ ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     });
     
+    conn.on('open', async () => {
+        console.log(
+            chalk.green.bold('✅ Login successful!')
+        );
+        console.log(
+            chalk.blueBright.italic('Confirming password...')
+        );
+        if (config.KTB1 == 'whitedevil' || config.KTB1 == 'Whitedevil') {
+        //thanks to afnanplk
+        console.log(
+            chalk.green.bold('THANK YOU FOR VISITING WHATSAPP GROUP -key cofirmed-')
+        );
+         }
+         else if (config.KTB1 == 'whitedevil' || config.KTB1 == 'Whitedevil') {
+         console.log(
+            chalk.red.bold('make sure you have typed the correct password'));
+         throw new Error("Password Error ⚠⚠ ");         
+         return; //created by afnanplk
+         }
+
 
     conn.on('open', async () => {
         console.log(
