@@ -92,7 +92,7 @@ var i = Math.floor(31*Math.random())
         a_plk[2] = "https://cdn.wallpapersafari.com/51/57/WXxpck.jpg";
         a_plk[3] = "https://cdn.wallpapersafari.com/72/42/nAdV2j.jpg";
         a_plk[4] = "https://cdn.wallpapersafari.com/55/85/n5cLrp.jpg";
-        a_plk[5] = "https://i.imgur.com/w89FHm7.jpeg";
+        a_plk[5] = "https://i.imgur.com/sNiwDMZ.jpeg";
         a_plk[6] = "https://mcdn.wallpapersafari.com/medium/55/25/KrvA7S.jpg";
         a_plk[7] = "https://images.pexels.com/photos/8294554/pexels-photo-8294554.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
         a_plk[8] = "https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
