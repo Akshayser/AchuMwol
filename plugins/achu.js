@@ -1,6 +1,5 @@
 /* Copyright (C) 2020 Yusuf Usta.
-re-editted by afnanplk
-Pinky V2 
+re-editted by afnanplk  
 */
 
 const Julie = require('../events');
