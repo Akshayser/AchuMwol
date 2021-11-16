@@ -66,10 +66,9 @@ you can contact -
 ## Developers
   <div align="center">
     
-  [![Farhan-Dqz](https://github.com/farhan-dqz.png?size=100)](https://github.com/farhan-dqz) | [![Akshayser](https://i.imgur.com/ZGDK6Bf.jpeg)](https://github.com/Akshayser) |  [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
-----|----|----
-[farhan-dqz](https://github.com/farhan-dqz) | [AKSHAYSER](https://github.com/Akshayser) | [afnanplk](https://github.com/afnanplk)
-Developer, Modifying as Public | Re-Developer, Bug Fixes, Modules, Commits |  Bug Fixes, Modules
+  [![Akshayser](https://i.imgur.com/ZGDK6Bf.jpeg)](https://github.com/Akshayser) 
+ 
+  [AKSHAYSER](https://github.com/Akshayser) 
   </div>
     
 
